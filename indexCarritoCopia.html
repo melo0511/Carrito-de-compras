@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="img/REAL STATE SERVICES.png" type="image/x-icon"> -->
+    <title>Shop</title>
+    <link rel="stylesheet" href="styleCarritoCopia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="./img/REAL STATE SERVICES2.png" alt="">
+        <h1>Real States Services</h1>
+        <i class=" icons fas fa-shopping-cart" id="products"></i>
+    </header>
+    <hr>
+    <nav>
+        <i href="indexLogin.html"><img  src="./img/btnSalir.png" alt=""></i>
+        <i href="indexPagina.html"><img  src="./img/btnInicio.png" alt=""></i>
+    </nav>
+    <div class="container-products">
+
+        <div class="modal"> 
+            <p>Inicie sesion para desbloquear esta funcionalidad</p>
+            <button id="close-modal">X</button>
+
+        </div>
+            <select name="" id="filterXPrice">
+                <option value="" class="selected">Select filter</option>
+                <option value="Menor a 400">Menor a 400</option>
+                <option value="Entre 400 y 800">Entre 400 y 800</option>
+                <option value="Mayores a 800">Mayores a 800</option>
+            </select>
+        <!-- este select se debe renderizar por javaScript consumiendo el objeto -->
+        <select name="" id="select-products">
+            <option value="">SELECT ONE OPTION</option>
+        </select>
+        <button id="btn-create">Create new product</button>
+    </div>
+    <main id="container-cards">
+        <div class="modal" id="modal-sesion">
+            <button id="close-modal-sesion">X</button>
+            <p>inicie sesion para empezar a comprar</p>
+            <a href="indexLogin.html" class="ir"><button >INICIAR SESION</button></a>
+            <a href="indexRegistro.html" class="ir"><button >REGISTRARSE</button></a>
+        </div>
+    </main>
+    <div class="overlay " id="overlay">
+        <div class="popup" id="popup">
+        <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+        <div class="shoppingCart">
+            <!-- <i class="fas fa-shopping-cart"></i> -->
+            <h3>Carrito</h3>
+        </div>
+        <div class="principal-container shoppingCart-container" >
+        </div>
+        </div>
+    </div>
+    <script src="copia.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
